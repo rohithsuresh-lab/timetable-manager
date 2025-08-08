@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Assigned Subjects</title>
+  <link rel="stylesheet" href="tdb4.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="user-info">
+      <img src="https://cdn-icons-png.flaticon.com/512/219/219986.png" alt="Profile" class="profile-pic">
+      <div>
+        <h3>Roshna miss</h3>
+        <p>Welcome, roshna@gmail.com</p>
+      </div>
+    </div>
+    <button class="logout-btn">Logout</button>
+  </header>
+
+  <section class="assigned-section">
+    <h4> Assigned Subjects</h4>
+
+    <div class="class-buttons">
+      <button class="class-btn active" onclick="showSubjects('S1')">S1</button>
+      <button class="class-btn" onclick="showSubjects('S2')">S2</button>
+      <button class="class-btn" onclick="showSubjects('S3')">S3</button>
+      <button class="class-btn" onclick="showSubjects('S4')">S4</button>
+      <button class="class-btn" onclick="showSubjects('S5')">S5</button>
+      <button class="class-btn" onclick="showSubjects('S6')">S6</button>
+    </div>
+
+    <div class="subject-leave-container">
+      <div class="subject-box" id="subjectBox">
+        <div>JAVA</div>
+        <div>Network</div>
+        <div>Network</div>
+      </div>
+
+      <div class="leave-form">
+        <form>
+          <h3>Apply Leave</h3>
+          <div class="form-group">
+            
+            <label for="leaveType">Leave Type:</label>
+            <select id="leaveType" name="leaveType">
+              <option value="" disabled selected>Select</option>
+              <option value="sick">Sick Leave</option>
+              <option value="casual">Casual Leave</option>
+              <option value="earned">Earned Leave</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="leaveDate">Date:</label>
+            <input type="date" id="leaveDate" name="leaveDate" />
+          </div>
+
+          <button type="submit">Submit Leave</button>
+        </form>
+      </div>
+    
+
+
+      <div class="view-options-card">
+        <h3>View Options</h3>
+        <button>View Free Hours</button>
+        <button>View Applied Leaves</button>
+        <button>View Rep Notes</button>
+      </div>
+       </div>
+    </div>
+  </section>
+
+  <section class="timetable-section">
+    <h4>Timetable (Your subject highlighted)</h4>
+    
+    <!-- Repeat for each class -->
+    <h3>Class : S1</h3>
+    <table>
+      <tr><th>Day</th><th>Hour 1</th><th>Hour 2</th><th>Hour 3</th><th>Hour 4</th><th>Hour 5</th></tr>
+      <tr><td>Monday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Wednesday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Thursday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Friday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Tuesday</td><td></td><td></td><td></td><td></td><td></td></tr>
+    </table>
+
+
+    <h3>Class : S2</h3>
+    <table>
+      <tr><th>Day</th><th>Hour 1</th><th>Hour 2</th><th>Hour 3</th><th>Hour 4</th><th>Hour 5</th></tr>
+      <tr><td>Monday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Wednesday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Thursday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Friday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Tuesday</td><td></td><td></td><td></td><td></td><td></td></tr>
+    </table>
+
+    <h3>Class : S3</h3>
+    <table>
+      <tr><th>Day</th><th>Hour 1</th><th>Hour 2</th><th>Hour 3</th><th>Hour 4</th><th>Hour 5</th></tr>
+      <tr><td>Monday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Wednesday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Thursday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Friday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Tuesday</td><td></td><td></td><td></td><td></td><td></td></tr>
+    </table>
+
+
+    <h3>Class : S4</h3>
+    <table>
+      <tr><th>Day</th><th>Hour 1</th><th>Hour 2</th><th>Hour 3</th><th>Hour 4</th><th>Hour 5</th></tr>
+      <tr><td>Monday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Wednesday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Thursday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Friday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Tuesday</td><td></td><td></td><td></td><td></td><td></td></tr>
+    </table>
+
+
+    <h3>Class : S5</h3>
+    <table>
+      <tr><th>Day</th><th>Hour 1</th><th>Hour 2</th><th>Hour 3</th><th>Hour 4</th><th>Hour 5</th></tr>
+      <tr><td>Monday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Wednesday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Thursday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Friday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Tuesday</td><td></td><td></td><td></td><td></td><td></td></tr>
+    </table>
+
+    <h3>Class : S6</h3>
+    <table>
+      <tr><th>Day</th><th>Hour 1</th><th>Hour 2</th><th>Hour 3</th><th>Hour 4</th><th>Hour 5</th></tr>
+      <tr><td>Monday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Wednesday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Thursday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Friday</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Tuesday</td><td></td><td></td><td></td><td></td><td></td></tr>
+    </table>
+    <!-- Repeat for other classes (S2–S6) as you already did -->
+  </section>
+
+  <script>
+    function showSubjects(className) {
+      const buttons = document.querySelectorAll('.class-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      const subjectBox = document.getElementById('subjectBox');
+      subjectBox.innerHTML = "";
+
+      if (className === "S1") {
+        subjectBox.innerHTML += "<div>JAVA</div><div>Network</div><div>Network</div>";
+      } else if (className === "S2") {
+        subjectBox.innerHTML += "<div>Python</div><div>OS</div>";
+      } else {
+        subjectBox.innerHTML += "<div>No subjects assigned</div>";
+      }
+    }
+  </script>
+</body>
+</html>
